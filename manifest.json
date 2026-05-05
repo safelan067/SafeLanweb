@@ -1,0 +1,21 @@
+{
+  "name": "SafeLAN",
+  "short_name": "SafeLAN",
+  "description": "Next-Gen LAN Security Platform",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0a0a12",
+  "theme_color": "#00d2ff",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

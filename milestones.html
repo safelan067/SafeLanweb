@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milestones | SafeLAN</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo-box" aria-label="SafeLAN Home">
+        <img src="assets/logo.png" class="logo-img" alt="SafeLAN Logo">
+        <h2>SafeLAN</h2>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="domain.html">Domain</a>
+        <a href="milestones.html" class="active">Milestones</a>
+        <a href="documents.html">Documents</a>
+        <a href="slides.html">Slides</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section class="section compact">
+      <div class="container">
+        <span class="eyebrow">— Milestones</span>
+        <h1 class="page-title">Project Assessments</h1>
+        <p class="page-lead">Select an assessment from the drop-down menu to view the main project milestones, dates,
+          marks, and submission details.</p>
+
+        <div class="assessment-container reveal">
+          <div class="assessment-selector">
+            <span class="selector-label">Choose Assessment</span>
+            <div class="custom-select">
+              <select id="assessment-select">
+                <option value="proposal-report">Proposal Report Submission</option>
+                <option value="proposal-presentation">Proposal Presentation</option>
+                <option value="progress-presentation-1">Progress Presentation 1</option>
+                <option value="progress-presentation-2">Progress Presentation 2</option>
+                <option value="checklist-submissions">Checklist Submissions</option>
+                <option value="final-thesis">Final Thesis Submissions</option>
+                <option value="final-presentation">Final Presentation</option>
+            </div>
+          </div>
+
+          <div class="assessment-content" id="assessment-content">
+            <h2 id="content-title">Proposal Report Submission</h2>
+            <div class="info-grid">
+              <div class="info-box">
+                <span>Assessment Date</span>
+                <p id="content-date">15th August 2025</p>
+              </div>
+              <div class="info-box">
+                <span>Marks Allocated</span>
+                <p id="content-marks">6%</p>
+              </div>
+              <div class="info-box">
+                <span>Status</span>
+                <p id="content-status">Completed</p>
+              </div>
+            </div>
+            <p class="assessment-desc" id="content-desc">A group report explaining how each specific component of the
+              system will be developed over the year. It clearly describes the approach and planned methodology, and
+              explains how the individual component contributes to the final system.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-topline" aria-hidden="true"></div>
+    <div class="container footer-container">
+      <div class="footer-brand reveal">
+        <a href="index.html" class="footer-logo" aria-label="SafeLAN Home">
+          <img src="assets/logo.png" alt="SafeLAN Logo">
+          <span>SafeLAN</span>
+        </a>
+        <p>Next-generation LAN security platform combining behavioral biometrics, machine learning-based anomaly
+          detection, and blockchain-powered audit logs for secure file access.</p>
+        <div class="footer-tags" aria-label="SafeLAN focus areas">
+          <span>Behavioral Biometrics</span>
+          <span>Trust Score</span>
+          <span>Blockchain Logs</span>
+        </div>
+      </div>
+
+      <nav class="footer-nav reveal" aria-label="Footer navigation">
+        <div class="footer-col">
+          <h3>Pages</h3>
+          <a href="index.html">Home</a>
+          <a href="domain.html">Domain</a>
+          <a href="milestones.html">Milestones</a>
+          <a href="about.html">About Us</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="documents.html">Documents</a>
+          <a href="slides.html">Slides</a>
+          <a href="https://github.com/Geshi00/SafeLAN_RP-25-26J-067.git" target="_blank" rel="noopener">GitHub
+            Repository</a>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Contact</h3>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="current-year">2026</span> SafeLAN Research Project | SLIIT</p>
+      <div class="footer-actions">
+        <a href="contact.html">Get in touch</a>
+        <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">Back to top ↑</button>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

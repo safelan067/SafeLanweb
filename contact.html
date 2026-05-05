@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | SafeLAN</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo-box" aria-label="SafeLAN Home">
+        <img src="assets/logo.png" class="logo-img" alt="SafeLAN Logo">
+        <h2>SafeLAN</h2>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="domain.html">Domain</a>
+        <a href="milestones.html">Milestones</a>
+        <a href="documents.html">Documents</a>
+        <a href="slides.html">Slides</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section class="section compact">
+      <div class="container">
+        <span class="eyebrow">— Get in Touch</span>
+        <h1 class="page-title">Contact Us</h1>
+
+        <div class="contact-wrapper">
+          <aside class="contact-info-card reveal">
+            <h2>Have a question about SafeLAN?</h2>
+            <p>Contact the research group for information about the SafeLAN platform, its key features, technical implementation, or any project-related inquiries.</p>
+
+            <div class="info-item">
+              <div class="info-icon">✉</div>
+              <div class="info-text">
+                <span>Email</span>
+                <a href="mailto:safelan.info@gmail.com" style="text-decoration: none;"><p>safelan.info@gmail.com</p></a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div class="info-text">
+                <span>Phone Number</span>
+                <a href="tel:0703183256" style="text-decoration: none;"><p>0703183256</p></a>
+              </div>
+            </div>
+          </aside>
+
+          <div class="contact-form-container reveal">
+            <form id="contact-form">
+              <div class="contact-grid">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group full">
+                  <label for="contact_number">Contact Number</label>
+                  <input type="text" id="contact_number" placeholder="Your contact number" required>
+                </div>
+                <div class="form-group full">
+                  <label for="message">Message</label>
+                  <textarea id="message" placeholder="I hope you are doing well..."></textarea>
+                </div>
+              </div>
+              <button type="submit" id="submit-btn" class="btn-send">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-topline" aria-hidden="true"></div>
+    <div class="container footer-container">
+      <div class="footer-brand reveal">
+        <a href="index.html" class="footer-logo" aria-label="SafeLAN Home">
+          <img src="assets/logo.png" alt="SafeLAN Logo">
+          <span>SafeLAN</span>
+        </a>
+        <p>Next-generation LAN security platform combining behavioral biometrics, machine learning-based anomaly detection, and blockchain-powered audit logs for secure file access.</p>
+        <div class="footer-tags" aria-label="SafeLAN focus areas">
+          <span>Behavioral Biometrics</span>
+          <span>Trust Score</span>
+          <span>Blockchain Logs</span>
+        </div>
+      </div>
+
+      <nav class="footer-nav reveal" aria-label="Footer navigation">
+        <div class="footer-col">
+          <h3>Pages</h3>
+          <a href="index.html">Home</a>
+          <a href="domain.html">Domain</a>
+          <a href="milestones.html">Milestones</a>
+          <a href="about.html">About Us</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="documents.html">Documents</a>
+          <a href="slides.html">Slides</a>
+          <a href="https://github.com/Geshi00/SafeLAN_RP-25-26J-067.git" target="_blank" rel="noopener">GitHub Repository</a>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Contact</h3>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="current-year">2026</span> SafeLAN Research Project | SLIIT</p>
+      <div class="footer-actions">
+        <a href="contact.html">Get in touch</a>
+        <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">Back to top ↑</button>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="success-overlay" id="success-overlay" aria-hidden="true">
+    <div class="success-card">
+      <div class="check-icon">✓</div>
+      <h3>Message Sent!</h3>
+      <p>Thank you for reaching out. Our team will get back to you shortly.</p>
+      <button class="btn-download" style="margin-top: 24px; width: 100%;" onclick="closeSuccess()">Close</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

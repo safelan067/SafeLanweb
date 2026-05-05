@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domain | SafeLAN</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo-box" aria-label="SafeLAN Home">
+        <img src="assets/logo.png" class="logo-img" alt="SafeLAN Logo">
+        <h2>SafeLAN</h2>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="domain.html" class="active">Domain</a>
+        <a href="milestones.html">Milestones</a>
+        <a href="documents.html">Documents</a>
+        <a href="slides.html">Slides</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section class="section compact">
+      <div class="container">
+        <h1 class="page-title">Domain</h1>
+
+        <article class="content-section reveal">
+          <h3>Literature Survey</h3>
+          <p>Modern organizations rely heavily on Local Area Networks (LANs) for internal file sharing and
+            communication. However, traditional authentication mechanisms such as passwords and role-based access
+            control are no longer sufficient to protect sensitive data. According to the research, these methods only
+            verify users at login and fail to provide continuous authentication, leaving systems vulnerable to insider
+            threats and unauthorized access.</p>
+          <p>Recent studies have introduced behavioral biometrics as a promising solution. Keystroke dynamics, which
+            analyze typing patterns such as dwell time and flight time, have been widely used to identify users
+            uniquely. Machine learning models like Support Vector Machines (SVM), Random Forest, and deep learning
+            approaches such as CNN and RNN have significantly improved authentication accuracy.</p>
+        </article>
+
+        <article class="content-section reveal">
+          <h3>Research Gap</h3>
+          <p>Despite significant advancements, existing research lacks integration of multiple security mechanisms into
+            a single adaptive system. Most systems focus only on behavioral biometrics without considering contextual
+            attributes such as user role, device type, and login time. Furthermore, there is limited research focusing
+            specifically on LAN-based environments, which require lightweight and offline-capable solutions.</p>
+          <p>The comparison table in the research shows that previous studies lack features such as trust-score-based
+            authentication, adaptive security mechanisms, and LAN-focused implementation. The proposed SafeLAN system
+            addresses all these limitations by combining behavioral biometrics with contextual analysis and real-time
+            trust scoring.</p>
+          <img src="assets/research-gap.png" class="content-img" alt="Research Gap Analysis">
+        </article>
+
+        <article class="content-section reveal">
+          <h3>Research Problem</h3>
+          <p>Traditional LAN authentication systems rely on static verification methods, which authenticate users only
+            once at login. This creates a major security gap because unauthorized users can gain access if credentials
+            are compromised. Additionally, existing systems do not continuously monitor user behavior, making them
+            ineffective against insider threats.</p>
+          <p>The main problem addressed in this research is the lack of a dynamic and adaptive authentication system
+            that can continuously validate user identity. The study aims to develop a solution that integrates
+            behavioral biometrics, contextual attributes, and trust scoring to enhance security in LAN-based file
+            systems.</p>
+        </article>
+
+        <article class="content-section reveal">
+          <h3>Objectives</h3>
+          <p>The primary objective of this research is to enhance LAN security by introducing a behavior-based
+            authentication system. The system aims to replace static password-based authentication with a dynamic
+            mechanism that continuously evaluates user identity.</p>
+          <p>Specific objectives include analyzing keystroke patterns, developing a trust score model, implementing
+            adaptive access control, and reducing insider threats. By achieving these objectives, the system ensures
+            that only legitimate users can access sensitive files within the LAN environment.</p>
+        </article>
+
+        <article class="content-section reveal">
+          <h3>Methodology</h3>
+          <p>The proposed methodology involves multiple stages, including data collection, preprocessing, feature
+            extraction, and model training. Behavioral data such as typing patterns are collected and analyzed using
+            machine learning techniques. A hybrid model combining CNN and RNN is used to improve accuracy by capturing
+            both spatial and temporal features.</p>
+          <p>The system calculates a dynamic trust score based on user behavior and contextual attributes. If the trust
+            score falls below a certain threshold, access is restricted or denied. This ensures continuous
+            authentication and enhances overall system security.</p>
+        </article>
+
+        <article class="content-section reveal">
+          <h3>Technologies Used</h3>
+          <p>The SafeLAN system uses a combination of modern technologies, including Python for development, machine
+            learning libraries such as TensorFlow and Scikit-learn for model training, and data processing tools like
+            Pandas and NumPy. These technologies enable efficient data analysis and accurate behavioral modeling.</p>
+          <p>Additionally, the system integrates secure file handling mechanisms, real-time monitoring, and logging
+            capabilities to ensure data integrity and accountability. The use of advanced technologies makes the system
+            scalable, reliable, and suitable for real-world applications in organizations.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-topline" aria-hidden="true"></div>
+    <div class="container footer-container">
+      <div class="footer-brand reveal">
+        <a href="index.html" class="footer-logo" aria-label="SafeLAN Home">
+          <img src="assets/logo.png" alt="SafeLAN Logo">
+          <span>SafeLAN</span>
+        </a>
+        <p>Next-generation LAN security platform combining behavioral biometrics, machine learning-based anomaly
+          detection, and blockchain-powered audit logs for secure file access.</p>
+        <div class="footer-tags" aria-label="SafeLAN focus areas">
+          <span>Behavioral Biometrics</span>
+          <span>Trust Score</span>
+          <span>Blockchain Logs</span>
+        </div>
+      </div>
+
+      <nav class="footer-nav reveal" aria-label="Footer navigation">
+        <div class="footer-col">
+          <h3>Pages</h3>
+          <a href="index.html">Home</a>
+          <a href="domain.html">Domain</a>
+          <a href="milestones.html">Milestones</a>
+          <a href="about.html">About Us</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="documents.html">Documents</a>
+          <a href="slides.html">Slides</a>
+          <a href="https://github.com/Geshi00/SafeLAN_RP-25-26J-067.git" target="_blank" rel="noopener">GitHub
+            Repository</a>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Contact</h3>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="current-year">2026</span> SafeLAN Research Project | SLIIT</p>
+      <div class="footer-actions">
+        <a href="contact.html">Get in touch</a>
+        <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">Back to top ↑</button>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
