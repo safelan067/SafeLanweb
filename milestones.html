@@ -30,7 +30,7 @@
         </div>
     </nav>
 
-    <!-- ASSESSMENT SECTION: Interactive component for viewing project milestones -->
+    <!-- ASSESSMENT SECTION -->
     <section class="milestone-page" style="min-height: 100vh; padding-top: 120px;">
         <div class="container">
             <span class="gradient-text"
@@ -41,7 +41,6 @@
                 main project milestones, dates, marks, and submission details.</p>
 
             <div class="assessment-container">
-                <!-- SELECTOR: Dynamic dropdown that triggers content updates via JS -->
                 <div class="assessment-selector">
                     <span class="selector-label">Choose Assessment</span>
                     <div class="custom-select">
@@ -59,7 +58,6 @@
                 </div>
 
                 <div class="assessment-content" id="assessment-content">
-                    <!-- Content will be injected by JavaScript -->
                     <h2 id="content-title">Proposal Report Submission</h2>
 
                     <div class="info-grid">
@@ -117,7 +115,7 @@
             },
             'checklist-submissions': {
                 title: 'Checklist Submissions',
-                date: 'January 2026 and April2026',
+                date: 'January 2026 and April 2026',
                 marks: '2%',
                 status: 'Completed',
                 desc: 'Checklist submissions confirm project management evidence and development tracking for the research project.',
@@ -136,6 +134,13 @@
                 status: 'Completed',
                 desc: 'The complete research project was fully finished for this presentation. The team clearly explained the entire system, walked through the implementation approach, and presented the final results achieved across all four security components.',
             },
+            'final-viva': {
+                title: 'Final Viva',
+                date: 'May 2026',
+                marks: '10%',
+                status: 'Upcoming',
+                desc: 'The final viva is an oral examination where each team member individually defends their research contributions, demonstrating in-depth understanding of their component and the overall SafeLAN system.',
+            },
         };
 
         const select = document.getElementById('assessment-select');
@@ -148,7 +153,6 @@
         select.addEventListener('change', (e) => {
             const data = assessmentData[e.target.value];
             if (data) {
-                // Add fade effect
                 const content = document.getElementById('assessment-content');
                 content.style.opacity = '0';
                 content.style.transform = 'translateY(10px)';
@@ -160,13 +164,6 @@
                     marks.textContent = data.marks;
                     status.textContent = data.status;
                     desc.textContent = data.desc;
-
-                    pointsList.innerHTML = '';
-                    data.points.forEach(point => {
-                        const li = document.createElement('li');
-                        li.textContent = point;
-                        pointsList.appendChild(li);
-                    });
 
                     content.style.opacity = '1';
                     content.style.transform = 'translateY(0)';
